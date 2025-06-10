@@ -17,6 +17,7 @@ export const Modal: React.FC<ModalProps> = ({
   onClose,
   children,
 }) => {
+  console.log("Modal component rendered. isOpen:", isOpen);
   const onChange = (open: boolean) => {
     if (!open) {
       onClose();
